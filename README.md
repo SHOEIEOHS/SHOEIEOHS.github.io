@@ -1,1 +1,0 @@
-# SHOEIEOHS.github.io
