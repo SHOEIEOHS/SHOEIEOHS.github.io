@@ -48,7 +48,6 @@ const sect2_art = document.getElementsByClassName("sect2_art");
 /* Quiz Stuff | S1 */
 const btn_Qz1Submit = document.getElementById("btn_Qz1Submit");
 const Qz1_ScoreBox = document.getElementById("Qz1_ScoreBox");
-const Qz1_Feedback = document.getElementById("Qz1_Feedback");
     const S1_Qz1_FB = document.getElementsByClassName("S1_Qz1_FB");
 
 /* Game Stuff | S2 */
@@ -91,7 +90,7 @@ function HIDE_SECTIONS() {
     btn_sect2_OW3[1].classList.add("display_out");
     OW3_btn_remove.classList.remove("opacity_out");
     // for (let i = 0; i < S1_Qz1_FB.length; i++) {S1_Qz1_FB[i].classList.remove("font_colorRed", "font_colorGreen");}
-
+    console.log(CWidth);
     for (let i = 0; i < sect2_art.length; i++) {
         if (CWidth >= 800 && CWidth != 999) {
             btn_menu.classList.add("display_out");
@@ -100,7 +99,7 @@ function HIDE_SECTIONS() {
             S1_RSW_HIDE.classList.add("display_out");
             for (let i = 0; i < figure_sect1.length; i++) {
                 figure_sect1[i].classList.remove("translate_-55Y");
-                figure_sect1[i].classList.remove("translate_45Y");
+                figure_sect1[i].classList.remove("translate_134X");
             }
             sect2_flex_grid.classList.remove("height_130vw");
         }
@@ -110,8 +109,10 @@ function HIDE_SECTIONS() {
             btn_index.classList.add("display_out");
             S1_RSW_HIDE.classList.remove("display_out");
             for (let i = 0; i < figure_sect1.length; i++) {
-                figure_sect1[i].classList.remove("translate_-135Y");
-                figure_sect1[i].classList.remove("translate_134Y");
+                figure_sect1[i].classList.remove("translate_-135X");
+                figure_sect1[i].classList.remove("translate_134X");
+                figure_sect1[i].classList.remove("translate_45Y");
+
             }
             sect2_flex_grid.classList.add("height_130vw");
         }
@@ -385,7 +386,7 @@ function ACCESS_SECTION2(Sec) {
     }
 /****************/
 function S1_Qz1_CHECK_ANS() {
-    let S1_Qz1_score = 0
+    let S1_Qz1_score = 0;
     let S1_Ans1_1 = document.querySelector("input[name='Q1']:checked").value;
     let S1_Ans2_1 = document.querySelector("input[name='Q2']:checked").value;
     let S1_Ans3_1 = document.querySelector("input[name='Q3']:checked").value;
@@ -416,7 +417,7 @@ function S1_Qz1_CHECK_ANS() {
         S1_Qz1_FB[2].classList.add("font_colorRed"); 
         S1_Qz1_FB[2].classList.remove("font_colorGreen");
     }
-    Qz1_ScoreBox.innerHTML = `You Scored ${S1_Qz1_score} / 3`
+    Qz1_ScoreBox.innerHTML = `You Scored ${S1_Qz1_score} / 3`;
 }
 /****************/
 let S2_ID, GM_score, GM_lives, GM2_AUD1_G = 0, GM2_AUD2_B = 0;
@@ -646,7 +647,7 @@ btn_menu.addEventListener("click", function () {
     btn_index.classList.toggle("display_out");
     console.log("Navigation Options | Display");
 });
-Fullscreen.addEventListener("click", function() {WD_FULLSCREEN();})
+Fullscreen.addEventListener("click", function() {WD_FULLSCREEN();});
 
 btn_topic[0].addEventListener("click", function() {SHOW(1); GET_CURRENT_PAGE(1);});
 btn_topic[1].addEventListener("click", function() {SHOW(2); GET_CURRENT_PAGE(2);});
