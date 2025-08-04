@@ -426,7 +426,7 @@ function S2_GM_DIET() {
     for (let i = 0; i < hide.length; i++) {hide[i].classList.add("display_out");}
     Aud_S2_GM_Start.play();
     scrollTo(0, 0);
-    WD_FULLSCREEN();
+    // WD_FULLSCREEN();
     S2_GM.classList.add("pos_sticky_bottom");
     REDPANDA.style.overflow = "hidden";
     Fullscreen.classList.add("display_out");
