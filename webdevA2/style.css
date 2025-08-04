@@ -1347,7 +1347,7 @@ footer {height: 80vh; width: 100%;}
 .S2_GM_Font7vw {font-size: 7vw;}
 
 /* Phone */
-.S2_GM_H0 {top: 3vw; left: 6.8vw;}
+.S2_GM_H0 {top: 3%; left: 23%; height: 100%;}
 .S2_GM_H1 {top: 3vw; left: 3vw;}
 .S2_GM_H2 {grid-row: 3/4; grid-column: 3/4;}
 /* PC */
