@@ -151,10 +151,10 @@ function HIDE_SECTION2(Sec) {
     for (let i = 0; i < btn_showCtg.length; i++) {btn_showCtg[i].classList.remove("animate_Sect2_Ctg_2", "animate_Sect2_Ctg_1");}
 
     if (CWidth < 800) {
-        S2_h3_Content[Sec].classList.add("align_center", "font_8vw");
+        S2_h3_Content[Sec].classList.add("align_center", "font_7_5vw");
         S2_h3_Content[Sec].classList.remove("align_end");
         for (let i = 0; i < S2_h3_Content.length; i++) {
-            S2_h3_Content[i].classList.add("font_8vw");
+            S2_h3_Content[i].classList.add("font_7_5vw");
         }
         for (let i = 0; i < sect2_art.length; i++) {
             sect2_art[i].classList.remove("flex_15Ctg", "flex_40Ctg", "flex_20Ctg");
@@ -182,7 +182,7 @@ function HIDE_SECTION2(Sec) {
         }
         for (let i = 0; i < S2_h3_Content.length; i++) {
             S2_h3_Content[i].classList.add("height_32vw", "font_0_9vw");
-            S2_h3_Content[i].classList.remove("height_3vw", "align_end", "font_2vw", "font_8vw", "align_center");
+            S2_h3_Content[i].classList.remove("height_3vw", "align_end", "font_2vw", "font_7_5vw", "align_center");
         }
     }
 }
@@ -426,9 +426,11 @@ function S2_GM_DIET() {
     for (let i = 0; i < hide.length; i++) {hide[i].classList.add("display_out");}
     Aud_S2_GM_Start.play();
     scrollTo(0, 0);
+    WD_FULLSCREEN();
     S2_GM.classList.add("pos_sticky_bottom");
     REDPANDA.style.overflow = "hidden";
     Fullscreen.classList.add("display_out");
+
     if (CWidth < 800) {S2_GM_exit.classList.add("S2_GM_H1", "S2_GM_Font5vw");}
     else {S2_GM_exit.classList.add("S2_GM_Font1_5vw");}
     setTimeout(
