@@ -1134,7 +1134,7 @@ footer {background: #1f1f1f; height: 180vw; width: 100vw;}
         /**/#S2_GM label:first-of-type {grid-row: 4/5; grid-column: 4/6;}
         /**/#S2_GM label:nth-of-type(2) {text-align: center; grid-row: 4/5; grid-column: 5/6; align-self: center;}
             #S2_GMSRT {font-size: 2vw;}
-            #S2_GM_restart {font-size: 3vw; transform: (0%, 0%);}
+            #S2_GM_restart {font-size: 3vw; transform: translate(0%, 0%);}
             #S2_GM_exit {font-weight: 1000; width: 3vw; height: 3vw;}
             .S2_GMETY {
                 width: 8vw;
