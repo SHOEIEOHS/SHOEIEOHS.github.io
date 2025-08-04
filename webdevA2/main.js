@@ -430,7 +430,7 @@ function S2_GM_DIET() {
     S2_GM.classList.add("pos_sticky_bottom");
     REDPANDA.style.overflow = "hidden";
     Fullscreen.classList.add("display_out");
-
+    footer_id.classList.add("display_out");
     if (CWidth < 800) {S2_GM_exit.classList.add("S2_GM_H1", "S2_GM_Font5vw");}
     else {S2_GM_exit.classList.add("S2_GM_Font1_5vw");}
     setTimeout(
@@ -602,6 +602,7 @@ function S2_GM_DIET() {
         S2_GM.classList.remove("pos_sticky_bottom");
         REDPANDA.style.overflow = "unset";
         Fullscreen.classList.remove("display_out");
+        footer_id.classList.remove("display_out");
         for (let i = 0; i < hide.length; i++) {hide[i].classList.remove("display_out");}
         if (CWidth < 800) {btn_menu.classList.remove("display_out");}
         nav_container.classList.remove("display_out");
