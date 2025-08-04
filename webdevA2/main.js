@@ -92,7 +92,7 @@ function HIDE_SECTIONS() {
     // for (let i = 0; i < S1_Qz1_FB.length; i++) {S1_Qz1_FB[i].classList.remove("font_colorRed", "font_colorGreen");}
     console.log(CWidth);
     for (let i = 0; i < sect2_art.length; i++) {
-        if (CWidth >= 800 && CWidth != 999) {
+        if (CWidth >= 800) {
             btn_menu.classList.add("display_out");
             for (let i = 0; i < 2; i++) {btn_topic[i].classList.remove("display_out");}
             btn_index.classList.remove("display_out");
