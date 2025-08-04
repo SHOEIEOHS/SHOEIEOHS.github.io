@@ -6,14 +6,67 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Red Pandas </title>
+
         <link href="style.css" rel="stylesheet">
         <script src="main.js" defer></script>
+
+        <!-- https://gist.github.com/hal0gen/5852bd9db240c477f20c -->
+        <link href="manifest.json" rel="manifest">
+
+        <!-- Mobile Web App --> <!-- https://gist.github.com/hal0gen/5852bd9db240c477f20c -->
+            <!-- Set the viewport. -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+
+            <!-- Web App Capability -->
+            <meta name="mobile-web-app-capable" content="yes">
+            <meta name="apple-mobile-web-app-capable" content="yes">
+
+            <!-- App titles -->
+                <!-- Make the app title different than the page title - iOS. -->
+                <meta name="apple-mobile-web-app-title" content="Mobile web app title">
+                
+                <!-- Make the app title different than the page title and configure icons - Android. -->
+                <link rel="manifest" href="/manifest.json">
+
+            <!-- ICONS -->
+                <!-- iOS icons -->
+                <link rel="apple-touch-icon" sizes="57x57" href="images/icons8-red-panda-100_B.png">
+                <link rel="apple-touch-icon" sizes="60x60" href="images/icons8-red-panda-100_B.png">
+                <link rel="apple-touch-icon" sizes="72x72" href="images/icons8-red-panda-100_B.png">
+                <link rel="apple-touch-icon" sizes="76x76" href="images/icons8-red-panda-100_B.png">
+                <link rel="apple-touch-icon" sizes="114x114" href="images/icons8-red-panda-100_B.png">
+                <link rel="apple-touch-icon" sizes="120x120" href="images/icons8-red-panda-100_B.png">
+                <link rel="apple-touch-icon" sizes="144x144" href="images/icons8-red-panda-100_B.png">
+                <link rel="apple-touch-icon" sizes="152x152" href="images/icons8-red-panda-100_B.png">
+                <link rel="apple-touch-icon" sizes="180x180" href="images/icons8-red-panda-100_B.png">
+            
+                <!-- Android icons -->
+                <link rel="icon" type="image/png" sizes="192x192" href="images/icons8-red-panda-100_B.png">
+                <link rel="icon" type="image/png" sizes="32x32" href="images/icons8-red-panda-100_B.png">
+                <link rel="icon" type="image/png" sizes="96x96" href="images/icons8-red-panda-100_B.png">
+                <link rel="icon" type="image/png" sizes="16x16" href="images/icons8-red-panda-100_B.png">
+
+                <!-- Windows icons -->
+                <meta name="msapplication-TileImage" content="images/icons8-red-panda-100_B.png">
+            
+                <!-- Windows dock color -->
+                <meta name="msapplication-TileColor" content="#fff">
+            
+                <!-- Android dock color -->
+                <meta name="theme-color" content="#fff">
+
+            <!-- Configure the status bar - iOS. -->
+            <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+            <!-- Disable automatic phone number detection. -->
+            <meta name="format-detection" content="telephone=no">
     </head>
 
     <body id="REDPANDA">
         <header id="header_container">
             <label class="hide"><button id="btn_menu"> ||| </button></label>
             <h1 class="hide"> Red Pandas </h1>
+            <label><button id="Fullscreen"></button></label>
              <!-- Area for buttons -->
             <nav id="nav_container" class="BF">
                 <ul>
@@ -26,9 +79,45 @@
 
         <aside id="section_index" class="BF">
             <h2> CONSERVATION  </h2>
-            <article class="detail_index"> Check </article>
-            <article class="detail_index">Check</article>
-            <article class="detail_index">Check</article>
+            <article class="detail_index">
+                <div>
+                    <h2> Saving Red Pandas </h2>
+                    <p> why it's important to conserve the red pandas </p>
+                </div>
+                <div>
+                    <h3> Biodiversity </h3>
+                    <p> Red pandas live in the eatern-parts of the <b>Himalayas</b>, which is home to more than <b>10,000 species</b> of plants and animals, of which <b>163 species</b> are <b>globally threatened</b>&mdash;<i>asia's three largest herbivores (Asian Elephant, Greater One-horned Rhinoceros, and Wild Water Buffalo), and largest carnivore (Tigers)</i>. </p>
+                    <p> Red pandas are one of its many <b>ambassadors</b>, who helps in <b>bringing awareness to</b> the fragile ecosystem known as <b>the Himalayas</b> before it's too late. </p>
+                    <p> In <b>conserving</b> this ecosystem, it'll bring forth a <b>more stable planet</b>&mdash;<i>off-setting the amount of carbon in the atmosphere, reducing the rate of which the Earth warms</i>; and also may prove to <b>provide essentail services</b> for us. </p>
+                    
+                    <h3> Environmet Gage </h3>
+                    <p> During winters, temperatures may drop to -20&#8451;. Red pandas tend to <b>live at cooler altitudes</b>&mdash;<i>high altitudes, where it's cooler and more suitable for them</i>; so as <b>global temperatures rises</b>, red pandas, will <b>seek higher altitudes</b>&mdash;<i>cooler temperatures, meeting their needs</i>. Thus, studying <b>their behavior</b> can allow us to <b>gage on</b> how the Himalayan <b>ecosystem is fairing</b> with <b>climate change</b>. </p>
+                </div>
+            </article>
+            <article class="detail_index">
+                <div>
+                    <h2> Conservation Efforts </h2>
+                </div>
+                <div>
+                    <h3> Red Panda Network </h3>
+                    <p> They are committed in <b>conserving</b> the <b>red pandas</b>, and their <b>habitat.</b> </p> 
+                    <p> By educating and empowering the local communities that lives there&mdash;<i>they expand the educational opportunities that the locals have, whom are often marginalized and/or have inadequate educational opportunities</i>. </p>
+                    <h3> Fauna & Flora </h3>
+                    <p> A international <b>wildlife conservation charity</b>, which is set on <b>protecting and restoring</b> habitats; <b>saving species</b> from extinction, and <b>developing livelihoods</b> that are <b>more sustainable</b>&mdash;<i>for those living closest to nature</i>.</p>
+                    <p> To <b>conserve</b> the Red Pandas, Fauna & Flora is <b>supporting the creation</b> of community-managed <b>no-hunting zones</b>&mdash;<i>in the most critical areas of biodiversity</i>; <b>patroled</b> by their <b>highly trained rangers</b> within that community&mdash;<i>they look out for signs of illegal logging and poaching</i>. </p>
+                </div>
+            </article>
+            <article class="detail_index">
+                <div>
+                    <h2> Individual Efforts </h2>
+                </div>
+                <div>
+                    <h3> Supporting Them </h3>
+                    <p> The best way to surport said conservation, is to <b>be part of the effort</b>&mdash;<i>communities they are brought together to save Red Pandas and/or the environment</i>. </p>
+                    <p> The second best way to <b>help out in the conservation efforts</b>, is by <b>donating</b> a portion of your wealth towards the cause. </p>
+                    <p> Under complications&mdash;<i>which may result in the lack of ability to help in the ways said above</i>; the very best way, is to <b>show and spread awareness</b>&mdash;<i>so that you can reach out to those, who may have more resources to spare for the conservation efforts</i>.
+                </div>
+            </article>
 
             <div class="div_index">
                 <div class="div_opacity"></div>
@@ -176,7 +265,40 @@
                      <!-- Sub-species, Hymalayan red panda (A. f. fulgens) & chinese red panda (A. f. styani)  -->
                 </article>
                 <article id="S1_QZ">
-
+                    <h3> Quiz Time </h3>
+                    <div>
+                        <fieldset>
+                            <legend> Which of these are close relatives to the Ailurus genus? </legend>
+                            <div><input type="radio" name ="Q1" value="Lemurs"> Lemurs </div>
+                            <div><input type="radio" name ="Q1" value="Hyenas"> Hyenas </div>
+                            <div><input type="radio" name ="Q1" value="Giant_Panda"> Giant Pandas </div>
+                            <div><input type="radio" name ="Q1" value="Fennec_Foxes"> Fennec Foxes </div>
+                            <div><input type="radio" name ="Q1" value="Ringtails"> Ringtails </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend> How many sub-species of Ailurus fulgens are there? </legend>
+                            <div><input type="radio" name="Q2" value="3"> 3 </div>
+                            <div><input type="radio" name="Q2" value="6"> 6 </div>
+                            <div><input type="radio" name="Q2" value="8"> 8 </div>
+                            <div><input type="radio" name="Q2" value="2"> 2 </div>
+                            <div><input type="radio" name="Q2" value="5"> 5 </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend> Where can wild red pandas be found? </legend>
+                            <div><input type="radio" name="Q3" value="Peru"> Peru </div>
+                            <div><input type="radio" name="Q3" value="Himalayas"> Himalayas </div>
+                            <div><input type="radio" name="Q3" value="Chile"> Chile </div>
+                            <div><input type="radio" name="Q3" value="Taiwan"> Taiwan </div>
+                            <div><input type="radio" name="Q3" value="Mongolia"> Mongolia </div>
+                        </fieldset>
+                        <button id="btn_Qz1Submit"> Submit </button>
+                        <h4 id="Qz1_ScoreBox"> ~Pending Submition~ </h4>
+                        <div id="Qz1_Feedback"> 
+                            <span class="S1_Qz1_FB"> &#10112; </span> 
+                            <span class="S1_Qz1_FB"> &#10113; </span> 
+                            <span class="S1_Qz1_FB"> &#10114; </span>
+                        </div>
+                    </div>
                 </article>
             </section>
 
@@ -215,9 +337,11 @@
                             <div class="sect2_div">
                                 <h4> Bamboo Leaves & Shoots </h4>
                                 <p> 
-                                    The red pandas' diet only comprises of a few species of bamboo, which takes-up a large portion of their diet. Bashania Faberi, is 1 of 40 species of bamboo in their region, but bamboo eaters seem to perfer them over the others, due to them being one of the most nutritent rich bamboo species&mdash;highest amount of protein and fiber found in bamboo.
+                                    The red pandas' diet only comprises of a few species of bamboo&mdash;which takes-up a large portion of their diet. 
+                                    Bashania Faberi&mdash;being 1 of 40 species of bamboo in their region; is the prefered by bamboo eaters&mdash;due to them being one of the most nutritent rich (highest amount of protein and fiber found in bamboo).
+                                    Bamboo Leaves are eaten through-out their life span, while bamboo shoots are only eaten during spring, where they are most fresh.
                                 </p>
-                                <p> &#9312; Winter &#9313; Spring </p>
+                                <p> All Seasons </p>
                                 <!-- 95 -->
                                 <button class="btn_showCtg"> % </button> 
                                 <button class="btn_sect2_back"> &#10095; </button>
@@ -230,8 +354,11 @@
                             <h3 class="S2_h3_Content"> Bramble Fruits </h3>
                             <label><button class="btn_sect2"></button></label>
                             <div class="sect2_div">
-                                <h4> Black Berry </h4>
-                                <p> </p>
+                                <h4> Blackberry </h4>
+                                <p> 
+                                    The red pandas' diet sometimes comprises of Fruits.
+                                    Blackberries, are very common in the eastern himalayas&mdash;at low elevations; but they are not native to the himalayas, and due to their "Weediness" it can displace native plant species, once poorly managed blackberry thickets&mdash;a very dense group of bushes&mdash;formes, it can create impenertrable barriers which may trap animals.
+                                </p>
                                 <p> </p>
                                 <button class="btn_showCtg"> % </button> 
                                 <button class="btn_sect2_back"> &#10095; </button>
@@ -245,8 +372,11 @@
                             <label><button class="btn_sect2"></button></label>
                             <div class="sect2_div">
                                 <h4> Peddyfield Pipit </h4>
-                                <p> </p>
-                                <p> </p>
+                                <p> 
+                                    The Peddyfield Pipit's Egg, is one of the many sources eggs that provides protin for red pandas, however due to their avaliability Red Pandas often prefer Bamboo over Eggs.
+                                    The only time where, Red Pandas will activily try to find protin sources, is when the Red Panda is female, and is pregnant&mdash;they need that extra ources of protein to develop their young.
+                                </p>
+                                <p> Summer, Autumn </p>
                                 <button class="btn_showCtg"> % </button> 
                                 <button class="btn_sect2_back"> &#10095; </button>
                             </div>
@@ -255,12 +385,15 @@
                     <article class="sect2_art">
                         <div></div>
                         <div>
-                            <h3 class="S2_h3_Content"> Unripen Acorns </h3>
+                            <h3 class="S2_h3_Content"> Unripen & Ripe Acorns </h3>
                             <label><button class="btn_sect2"></button></label>
                             <div class="sect2_div">
                                 <h4> Oak Trees </h4>
-                                <p> </p>
-                                <p> </p>
+                                <p> 
+                                    Oak trees' acorns fall during September to December, while Red Pandas traverse the floor, they may occationaly eat a few.
+                                    Ripen acorns, are generaly hard to crack open, but due to their adaptation towards bamboo, they are able to produce sufficent force to crack open an acorn to get to its kernel.
+                                </p>
+                                <p> Autumn </p>
                                 <button class="btn_showCtg"> % </button> 
                                 <button class="btn_sect2_back"> &#10095; </button>
                             </div>
@@ -273,8 +406,11 @@
                             <label><button class="btn_sect2"></button></label>
                             <div class="sect2_div">
                                 <h4> Orange-Yellow Lichen </h4>
-                                <p> </p>
-                                <p> </p>
+                                <p> 
+                                    Lichen is a composite organism&mdash;a life form that contains two or more organisms, that lives in a symbiotic relationship with each other, each contributing to the greater whole&mdash; made of fungi and alga or cyanobacterium&mdash;a type of bacteria that is able to use the sun for energy.
+                                    Red Pandas, usally hang around lichens as due to their coat&mdash;they blend in with the surroundings; sometimes tasting it on the go. 
+                                </p>
+                                <p> Autumn </p>
                                 <button class="btn_showCtg"> % </button> 
                                 <button class="btn_sect2_back"> &#10095; </button>
                             </div>
@@ -323,12 +459,24 @@
     <!--11-->   <p><a target="blank" href="https://unsplash.com/photos/brown-round-ball-on-white-sand-during-daytime-cz6F-gipkuQ"> @croccol | Corentin Largeron </a></p>
     <!--12-->   <p><a target="blank" href="https://unsplash.com/photos/a-plant-that-is-growing-on-a-tree-CK-OqStyvks"> @nandhukumarndd / @nandhukumar_nk | Nandhu kumar </a></p>
     <!--13-->   <p><a target="blank" href="https://www.pexels.com/photo/close-up-of-fresh-lychee-fruits-on-branch-30540388"> @serjosoza | Sérgio Souza </a></p>
+    <!--14-->   <p><a target="black" href="https://icons8.com/icons"> Icons @icons8 </a></p>
             </div>
+
+            <div class="Foot_BK">
+                <h2> SOUND SOURCE </h2>
+                <p><a target="blank" href="https://pixabay.com"> Sound @pixabay </a></p>
+            </div>
+
             <div class="Foot_BK">
                 <h2 class="BF"> NYP RELATED </h2>
                 <p> Lab Group: 01</p>
                 <p> Name: Shoei Ng En Yu </p>
                 <p> AdminNo: 252383E</p>
+            </div>
+
+            <div class="Foot_QR">
+                <h2> Quick Response Code </h2>
+                <img src="images/httpsshoeieohs.github.iowebdevA2.png" alt="QR. Code, to this website.">
             </div>
         </footer>
     </body>
