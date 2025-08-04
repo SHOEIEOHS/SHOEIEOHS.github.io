@@ -428,6 +428,8 @@ function S2_GM_DIET() {
     Aud_S2_GM_Start.play();
     scrollTo(0, 0);
     // WD_FULLSCREEN();
+    S2_GM.style.overscrollBehavior = "contain";
+    
     S2_GM.classList.add("pos_sticky_bottom");
     REDPANDA.style.overflow = "hidden";
     Fullscreen.classList.add("display_out");
@@ -602,6 +604,9 @@ function S2_GM_DIET() {
         /* Elements outside the game */
         S2_GM.classList.remove("pos_sticky_bottom");
         REDPANDA.style.overflow = "unset";
+
+        S2_GM.style.overscrollBehavior = "auto";
+
         Fullscreen.classList.remove("display_out");
         footer_id.classList.remove("display_out");
         for (let i = 0; i < hide.length; i++) {hide[i].classList.remove("display_out");}
