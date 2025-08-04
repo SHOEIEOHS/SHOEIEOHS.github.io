@@ -427,7 +427,7 @@ function S2_GM_DIET() {
     for (let i = 0; i < hide.length; i++) {hide[i].classList.add("display_out");}
     Aud_S2_GM_Start.play();
     scrollTo(0, 0);
-    WD_FULLSCREEN();
+    // WD_FULLSCREEN();
     S2_GM.classList.add("pos_sticky_bottom");
     REDPANDA.style.overflow = "hidden";
     Fullscreen.classList.add("display_out");
@@ -743,5 +743,4 @@ S2_GM_exit.addEventListener("click", function() {S2_GM_STOP();});
     S2_GMETY[10].addEventListener("mousedown", function() {S2_GM_GET_TYPE("COCO", 10);});
     S2_GMETY[11].addEventListener("mousedown", function() {S2_GM_GET_TYPE("COCO", 11);});
     S2_GMETY[12].addEventListener("mousedown", function() {S2_GM_GET_TYPE("COCO", 12);});
-
 HIDE_SECTIONS();
