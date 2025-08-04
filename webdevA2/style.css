@@ -15,6 +15,7 @@
     translate: 0% 0%;
     top: 0px;
     left: 0px;
+    overscroll-behavior: none;
 
     width: auto;
     height: auto;
@@ -1362,4 +1363,5 @@ footer {height: 80vh; width: 100%;}
 .S2_GMETY_TRANS1 {transition: top 3.8s, left 3.8s;}
 .S2_GMETY_TRANS2 {transition: top 4.5s, left 4.5s;}
 .S2_GMETY_TRANS3 {transition: top 4.8s, left 4.8s;}
+
 .S2_GMETY_TRANS4 {transition: top 5.4s, left 5.4s;}
